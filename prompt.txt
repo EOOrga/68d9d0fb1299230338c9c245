@@ -1,0 +1,6 @@
+using $gpc-app-builder  create this app
+app title: BONNIER ALAIN JEAN JACQUES
+app idea: An operations-focused app offering staff training courses, revenue analytics, maintenance requests, and equipment checkout to streamline daily business tasks.
+company name: BONNIER ALAIN JEAN JACQUES
+email address: [email to be provided later]
+the two icon and featured graphics contained in docs folder

@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000B1A">
+  <title>BONNIER ALAIN JEAN JACQUES</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="favicon.png">
+  <style>
+    :root {
+      --navy: #000b1a;
+      --blue: #002452;
+      --red: #b70817;
+      --ink: #1e2023;
+      --cream: #f8f3ea;
+      --paper: #fffaf4;
+      --line: #ded6cc;
+      --steel: #4e5f70;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.5;
+    }
+
+    header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 22px clamp(18px, 5vw, 64px);
+      color: #fff;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      letter-spacing: 0;
+    }
+
+    .brand img {
+      width: 44px;
+      height: 44px;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+      font-size: 0.94rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .hero {
+      min-height: 86vh;
+      display: grid;
+      align-items: end;
+      padding: 110px clamp(18px, 5vw, 64px) 64px;
+      color: #fff;
+      background:
+        linear-gradient(90deg, rgba(0, 11, 26, 0.92), rgba(0, 11, 26, 0.42) 52%, rgba(0, 11, 26, 0.14)),
+        url("featured.png") center / cover no-repeat;
+    }
+
+    .hero-content {
+      max-width: 720px;
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 760px;
+      font-size: clamp(2.5rem, 7vw, 5.9rem);
+      line-height: 0.95;
+      letter-spacing: 0;
+    }
+
+    .hero p {
+      max-width: 620px;
+      margin: 22px 0 0;
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      color: #f4efe8;
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 18px;
+      border-radius: 8px;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .button.primary {
+      color: #fff;
+      background: var(--red);
+    }
+
+    .button.secondary {
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.72);
+    }
+
+    main {
+      background: var(--paper);
+    }
+
+    section {
+      padding: clamp(42px, 8vw, 76px) clamp(18px, 5vw, 64px);
+    }
+
+    .section-head {
+      max-width: 760px;
+      margin-bottom: 28px;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      line-height: 1.05;
+      letter-spacing: 0;
+      color: var(--navy);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .card {
+      min-height: 220px;
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+
+    .card strong {
+      display: block;
+      margin-bottom: 10px;
+      color: var(--navy);
+      font-size: 1.04rem;
+    }
+
+    .icon {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 16px;
+      border-radius: 8px;
+      color: #fff;
+      background: var(--red);
+      font-weight: 900;
+    }
+
+    .band {
+      background: var(--navy);
+      color: #fff;
+    }
+
+    .band h2,
+    .band strong {
+      color: #fff;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      align-items: start;
+    }
+
+    .stat-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .stat {
+      padding: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .stat b {
+      display: block;
+      font-size: 2rem;
+      color: #fff;
+    }
+
+    footer {
+      padding: 28px clamp(18px, 5vw, 64px);
+      color: #fff;
+      background: #060913;
+    }
+
+    @media (max-width: 920px) {
+      nav {
+        display: none;
+      }
+
+      .grid,
+      .split {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: 82vh;
+        background-position: 58% center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="icons/Icon-192.png" alt="">
+      <span>BONNIER ALAIN JEAN JACQUES</span>
+    </div>
+    <nav aria-label="Primary">
+      <a href="#workflow">Workflow</a>
+      <a href="#analytics">Analytics</a>
+      <a href="#privacy">Privacy</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>BONNIER ALAIN JEAN JACQUES</h1>
+      <p>A focused Android workspace for staff training, revenue review, maintenance follow-up, and equipment checkout records.</p>
+      <div class="cta-row">
+        <a class="button primary" href="mailto:support@bonnieralainjeanjacques.com">Contact support</a>
+        <a class="button secondary" href="#workflow">View workflow</a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section id="workflow">
+      <div class="section-head">
+        <h2>Daily operations without extra systems</h2>
+        <p>The app keeps common staff tasks in one local mobile experience so managers can review work quickly during a shift.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <div class="icon">T</div>
+          <strong>Staff training</strong>
+          <p>Track course completion for opening standards, cash control, equipment care, and service recovery.</p>
+        </article>
+        <article class="card">
+          <div class="icon">R</div>
+          <strong>Revenue analytics</strong>
+          <p>Review revenue movement, service line pacing, and operational focus areas in a compact dashboard.</p>
+        </article>
+        <article class="card">
+          <div class="icon">M</div>
+          <strong>Maintenance requests</strong>
+          <p>Create local issue records, assign urgency, and move requests through open, scheduled, and resolved states.</p>
+        </article>
+        <article class="card">
+          <div class="icon">E</div>
+          <strong>Equipment checkout</strong>
+          <p>Record who has key equipment, due dates, and returned status so daily handoffs stay clear.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="analytics" class="band">
+      <div class="split">
+        <div>
+          <h2>Built for repeated operational checks</h2>
+          <p>Home, courses, revenue, requests, equipment, and privacy screens are designed for quick phone use by managers and staff.</p>
+        </div>
+        <div class="stat-list">
+          <div class="stat"><b>4</b> Training categories</div>
+          <div class="stat"><b>3</b> Maintenance states</div>
+          <div class="stat"><b>0</b> Account, cloud sync, analytics, or ad services</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="privacy">
+      <div class="section-head">
+        <h2>Local by design</h2>
+        <p>Records and preferences are stored on the Android device. The app does not require sign-in, does not send records to a server, and does not request Android permissions.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    BONNIER ALAIN JEAN JACQUES | support@bonnieralainjeanjacques.com
+  </footer>
+</body>
+</html>
