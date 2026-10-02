@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "applications": {
+    "com.taziggg100.bonnierops": {
+      "title": "BONNIER ALAIN JEAN JACQUES",
+      "short_description": "Manage staff courses, revenue checks, maintenance requests, and equipment...",
+      "full_description": "BONNIER ALAIN JEAN JACQUES gives managers and staff a focused Android workspace for daily operations. The app brings staff training courses, revenue review, maintenance requests, and equipment checkout records into one phone-friendly flow.\n\nUse the dashboard to review the day, mark training progress, inspect revenue movement, create maintenance requests, and track equipment handoffs. Records are saved locally on the device, with no account registration or cloud sync.",
+      "source_screenshots": [
+        "docs/screens/1.png",
+        "docs/screens/2.png",
+        "docs/screens/3.png"
+      ],
+      "generated_from": "existing repository listing metadata and README",
+      "generated_at": "2026-10-02T21:22:34.853194+00:00"
+    }
+  }
+}
