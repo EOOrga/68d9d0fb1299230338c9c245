@@ -1,0 +1,3 @@
+BONNIER ALAIN JEAN JACQUES gives managers and staff a focused Android workspace for daily operations. The app brings staff training courses, revenue review, maintenance requests, and equipment checkout records into one phone-friendly flow.
+
+Use the dashboard to review the day, mark training progress, inspect revenue movement, create maintenance requests, and track equipment handoffs. Records are saved locally on the device, with no account registration or cloud sync.
