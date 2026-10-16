@@ -39,9 +39,9 @@ class OperationsApp extends StatelessWidget {
 
 class AppTheme {
   static const navy = Color(0xFF000B1A);
-  static const deepBlue = Color(0xFF002452);
-  static const red = Color(0xFFB70817);
-  static const ink = Color(0xFF1E2023);
+  static const deepBlue = Color(0xFF1FD2FF);
+  static const red = Color(0xFF1FFFBC);
+  static const ink = Color(0xFF1F62FF);
   static const cream = Color(0xFFF8F3EA);
   static const steel = Color(0xFF4E5F70);
 
@@ -667,7 +667,7 @@ class DashboardScreen extends StatelessWidget {
         const SizedBox(height: 8),
         ActionTile(
           icon: Icons.school_outlined,
-          title: 'Continue staff training',
+          title: 'BONNIER ALAIN JEAN JACQUES',
           subtitle: 'Two courses are ready for review.',
           button: 'Open',
           onTap: () => onSelect(1),

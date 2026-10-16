@@ -1,4 +1,4 @@
-name: bonnier_ops
+name: bonnierops
 description: "Local operations workspace for BONNIER ALAIN JEAN JACQUES."
 publish_to: 'none'
 version: 1.0.0+1
@@ -28,5 +28,5 @@ flutter_launcher_icons:
   ios: false
   image_path: "docs/icon.png"
   min_sdk_android: 23
-  adaptive_icon_background: "#000B1A"
-  adaptive_icon_foreground: "docs/icon.png"
+  adaptive_icon_background: "#1F62FF"
+  adaptive_icon_foreground: docs/icon.png
